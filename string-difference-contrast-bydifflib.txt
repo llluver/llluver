@@ -1,22 +1,22 @@
 #!/usr/bin/python
 import difflib
 
-text1 = """text1:          #¶¨Òå×Ö·û´®1
+text1 = """text1:          #å®šä¹‰å­—ç¬¦ä¸²1
 This module provides classes and functions for comparing sequences.
 including HTML and context and unified diffs.
 difflib document v7.4
 add string
 """
 
-text1_lines = text1.splitlines()    #ÒÔÐÐ½øÐÐ·Ö¸î£¬½øÐÐ¶Ô±È
+text1_lines = text1.splitlines()    #ä»¥è¡Œè¿›è¡Œåˆ†å‰²ï¼Œè¿›è¡Œå¯¹æ¯”
 
-text2 = """text2:    #¶¨Òå×Ö·û´®2
+text2 = """text2:    #å®šä¹‰å­—ç¬¦ä¸²2
 This module provides classes and functions for Comparing sequences.
 including HTML and context and unified diffs.
 difflib document v7.5"""
 
 text2_lines = text2.splitlines()
 
-d = difflib.Differ()     #´´½¨Differ()¶ÔÏó
-diff = d.compare(text1_lines, text2_lines)   #²ÉÓÃcompare¶Ô×Ö·û´®½øÐÐ±È½Ï
+d = difflib.Differ()     #åˆ›å»ºDiffer()å¯¹è±¡
+diff = d.compare(text1_lines, text2_lines)   #é‡‡ç”¨compareå¯¹å­—ç¬¦ä¸²è¿›è¡Œæ¯”è¾ƒ
 print '\n'.join(list(diff))
