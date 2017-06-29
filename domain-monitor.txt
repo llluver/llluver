@@ -5,7 +5,7 @@ import os
 import httplib
 
 iplist=[]    
-appdomain="portal.gtcloud.cn"    
+appdomain="www.helloworld.com"    
 
 def get_iplist(domain=""):    
     try:
